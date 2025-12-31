@@ -1,0 +1,1 @@
+token="Тут_токен_от_@botfather"
