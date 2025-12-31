@@ -6,7 +6,7 @@ bot=telebot.TeleBot(token=config.token)
 @bot.message_handler(commands=['start'])
 def wellcome(m):
    # ответ на сообщение 
-   bot.send_message('Привет я бот')
+   bot.send_message(text='Привет я бот',chat_id=m.chat.id)
 
 # Работа по модели long-polling.
 bot.polling()
